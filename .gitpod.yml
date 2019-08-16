@@ -1,10 +1,10 @@
 image:
-    file: ./.gitpod/Dockerfile
-
-# tasks:
-#   - init: yarn install
-#     command: yarn build
+  file: ./.gitpod/Dockerfile
+  context: ./.gitpod
 
 ports:
-  - port: 8000
-    onOpen: ignore
+- port: 8000
+- port: 8080
+
+tasks:
+- command: which iex
